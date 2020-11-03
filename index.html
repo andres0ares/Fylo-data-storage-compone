@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -9,19 +10,37 @@
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <section class="container">
 
-  185 GB Left
+    <div class="fylo" >
+      <div class="icon ic-1"><img src="./images/icon-document.svg" alt="Document"></div>
+      <div class="icon ic-2"><img src="./images/icon-folder.svg" alt="Folder"></div>
+      <div class="icon ic-3"><img src="./images/icon-upload.svg" alt="Upload"></div>    
+      
+    </div>
+
+    <div>
+      <h4><span>185</span> GB Left</h4>
+    </div>
+
+    <div class="status">
+      <h6 class="hl-1">You’ve used <span class="hl-3"> 815 GB </span> of your storage</h6>
+      <div class="bar-1"><div class="bar-2"><div class="ball"></div></div></div>
+      <h6 class="hl-2 hl2-1">0 GB</h6>
+      <h6 class="hl-2 hl2-2">1000 GB</h6>
+    </div>
+  </section>
   
-  0 GB
-  1000 GB
+
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
