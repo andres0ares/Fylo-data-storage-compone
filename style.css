@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body { 
@@ -8,10 +8,13 @@ body {
     background-position: 0px 340px;
 }
 
-.hl-1 { color:hsl(229, 7%, 55%) }
+.hl-1, .left h4 { color:hsl(229, 7%, 55%) }
 .hl-2, .hl-3 { color: hsl(243, 100%, 93%); }
+.l-185 { color: hsl(229, 57%, 11%);}
 
-body, .icon, .bar-1 { background-color:hsl(229, 57%, 11%); }
+body, .icon { background-color:hsl(229, 57%, 11%); }
+
+.bar-1 { background-color: hsl(231,69%,20%);}
 
 .container { margin: 250px 250px;}
 
@@ -44,8 +47,9 @@ body, .icon, .bar-1 { background-color:hsl(229, 57%, 11%); }
 .ic-3 { margin: 110px 0px 0px 160px;}
 
 .status {
+    z-index: 1;
     position: absolute;
-    margin-left: 382px;
+    margin: 40px 0px 0px 382px;
     border-radius: 15px;
     width: 535px;
     height: 160px;
@@ -92,3 +96,105 @@ body, .icon, .bar-1 { background-color:hsl(229, 57%, 11%); }
 
 .hl2-1 { margin: 105px 0px 0px 34px;}
 .hl2-2 { margin: 105px 0px 0px 410px;}
+
+.left {
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    margin: -10px 0px 0px 700px;
+    z-index: 2;
+    background-color: white;
+    clip-path: polygon(0 0, 180px 0, 180px 75px, 180px 94px, 158px 75px, 0 75px);
+    width: 180px;
+    height: 120px;
+}
+
+.left h4 { position: absolute; margin: 10px 0px 0px 12px; font-size: 14px;}
+
+.l-185 {
+    margin: 0px 8px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        background-image: url("./images/bg-mobile.png");
+        background-size: 200% ;
+        background-position: -70px 0px;
+    }
+
+    .container { margin: 100px 3%;}
+
+    .fylo {
+        background-position: 20% 30%;
+        width: 90%;
+        height: 200px;
+    }
+    .status {
+        margin: 220px 0px 0px 0px;
+        width: 90%;
+        height: 150px;
+    }
+
+    .icon {
+        border-radius: 10px;
+        margin: 10px 10px;
+        
+    }
+    
+    .icon img { position: absolute; display: block; bottom: 10px; right: 10px;}
+    
+    .ic-1 { margin: 120px 0px 0px 40px; }
+    .ic-2 { margin: 120px 0px 0px 100px; }
+    .ic-3 { margin: 120px 0px 0px 160px;}
+
+    .bar-1 {
+        margin: 18% 0px 0px 10%;
+        border-radius: 20px;
+        width:80%;
+        height: 20px;
+    }
+    
+    .bar-2 {
+        margin-top: 2px;
+        border-radius: 20px;
+        width: 70%;
+        height: 16px;
+    }
+    
+    .ball {
+        margin-top: 1px;
+        margin-left: 92%;
+        border-radius: 7px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .hl-1 {
+        margin: 10% 0px 0px 14%;
+    }
+    
+    .hl2-1 { margin: 25% 0px 0px 12%}
+    .hl2-2 { margin: 25% 0px 0px 74%;}
+
+    .left {
+        border-radius: 10px 10px 10px 10px;
+        position: absolute;
+        margin: 330px 0px 0px 20%;
+        z-index: 2;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%);
+        width: 180px;
+        height: 75px;
+    }
+    
+    .left h4 { position: absolute; margin: 10px 0px 0px 12px; font-size: 14px;}
+    
+    .l-185 {
+        margin: 0px 8px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
